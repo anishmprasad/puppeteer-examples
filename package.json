@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "puppeteer": "^13.1.1"
+  },
+  "name": "puppeteer-examples",
+  "version": "1.0.0",
+  "main": "pdf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anishmprasad/puppeteer-examples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anishmprasad/puppeteer-examples/issues"
+  },
+  "homepage": "https://github.com/anishmprasad/puppeteer-examples#readme",
+  "description": ""
+}
