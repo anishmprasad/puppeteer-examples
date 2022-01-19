@@ -12,14 +12,14 @@ const puppeteer = require('puppeteer');
     await page.waitForNavigation({
         waitUntil: 'networkidle0',
       });
-    await page.type('#identifierId', "anish.m.prasad@gmail.com");
+    await page.type('#identifierId', "adasdasdasd");
     await page.click('.nCP5yc');
     await page.waitForNavigation({
         waitUntil: 'networkidle0',
       });
     
-    await page.type('input[type="password"]', 'ANISHMANAPULLY')
-    // await page.type('[name*="password"]', "ANISHMANAPULLY");
+    await page.type('input[type="password"]', 'cccadsadsad')
+    // await page.type('[name*="password"]', "asdsadsadsa");
     await page.click('.nCP5yc');
     // // await page.click('#u_0_b');
     // await page.waitForNavigation();
