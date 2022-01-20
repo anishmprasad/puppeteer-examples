@@ -10,10 +10,25 @@ const puppeteer = require('puppeteer');
         // Remove the timeout
         timeout: 0
     });
+    
     // await page.waitForSelector('.MathJax', {
     //     visible: true,
     //   });
+
+    // await page.waitForNavigation({
+    //     waitUntil: 'networkidle0',
+    //   });
+
     await page.pdf({ path: `mathjax.pdf`, format: 'a4' });
+
+    // await page.pdf({
+    //     path: outputFileName,
+    //     displayHeaderFooter: true,
+    //     headerTemplate: '',
+    //     footerTemplate: '',
+    //     printBackground: true,
+    //     format: 'A4',
+    //   });
 
     await browser.close();
 })();
