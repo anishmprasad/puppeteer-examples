@@ -1,1 +1,4 @@
 # puppeteer-examples
+
+# Licence 
+MIT
