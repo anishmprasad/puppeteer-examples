@@ -6,7 +6,7 @@
   "version": "1.0.0",
   "main": "pdf.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon node mathjax.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
     "url": "https://github.com/anishmprasad/puppeteer-examples/issues"
   },
   "homepage": "https://github.com/anishmprasad/puppeteer-examples#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
