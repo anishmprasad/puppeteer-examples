@@ -2,6 +2,7 @@ const puppeteer = require('puppeteer');
 
 (async () => {
     const url = 'https://www.sqlpac.com/en/documents/html-equations-math-with-mathjax-asciimath.html'
+    // const url = 'https://news.google.com'
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
     await page.goto(url, {
@@ -19,7 +20,7 @@ const puppeteer = require('puppeteer');
     //     waitUntil: 'networkidle0',
     //   });
 
-    await page.pdf({ path: `mathjax.pdf`, format: 'a4' });
+    await page.pdf({ path: `mathjax1.pdf`, format: 'a4' });
 
     // await page.pdf({
     //     path: outputFileName,
