@@ -12,7 +12,6 @@
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   <script type="text/x-mathjax-config">
         MathJax.Hub.Register.StartupHook("NativeMML Jax Ready",function () {
             document.getElementById("hide-math").disabled = true;
@@ -31,7 +30,9 @@
             CommonHTML: { linebreaks: { automatic: true } }
         });
   </script>
-  <script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  <!-- <script>
       window.MathJax = {
             skipStartupTypeset: true,
             messageStyle: 'none',
@@ -66,13 +67,57 @@
             },
         };
       
-  </script>
+  </script> -->
 
   <script type="text/babel">
       class Hello extends React.Component{
         state = {
             question : []
         }
+        // on_image_loaded() {
+		//     this.imageLoadedCounter++;
+        //     if (this.imageLoadedCounter == this.totalImageCount && this.mathJaxRendered) {
+        //             console.log('mathjax rendered')
+
+        //     }
+	    // }
+        // on_check_loaded() {
+        //     this.checkLoadedCounter++;
+        //     if (
+        //         this.imageLoadedCounter == this.totalImageCount &&
+        //         this.checkLoadedCounter == this.totalCheckCount &&
+        //         this.mathJaxRendered
+        //     ) {
+        //             console.log('mathjax rendered')
+
+                
+        //     }
+        // }
+        // componentDidUpdate() {
+        //     MathJax.Hub.Config({});
+        //     MathJax.Hub.Queue(['Typeset', MathJax.Hub], ['setRenderer', MathJax.Hub, 'SVG']); // ['setRenderer', MathJax.Hub, 'SVG'] // PreviewHTML
+        //     MathJax.Hub.Queue(() => {
+        //         this.mathJaxRendered = true;
+        //         if (this.imageLoadedCounter == this.totalImageCount && this.mathJaxRendered) {
+        //             console.log('mathjax rendered')
+        //         }
+        //     });
+        //     if (this.imageLoadedCounter == this.totalImageCount && this.mathJaxRendered) {
+        //         console.log('mathjax rendered')
+        //     }
+        //     if (this.state.question) {
+        //         var imageElements = document.getElementsByTagName('img');
+        //         var checkElements = document.getElementsByClassName('fa-check');
+        //         this.totalImageCount = imageElements.length;
+        //         this.totalCheckCount = checkElements.length;
+        //         for (let i = 0; i < checkElements.length; i++) {
+        //             checkElements[i].addEventListener('load', this.on_check_loaded);
+        //         }
+        //         for (let i = 0; i < imageElements.length; i++) {
+        //             imageElements[i].addEventListener('load', this.on_image_loaded);
+        //         }
+        //     }
+        // }
         componentDidUpdate(){
             window?.MathJax?.Hub?.Queue(['Typeset', window?.MathJax?.Hub]);
         }
