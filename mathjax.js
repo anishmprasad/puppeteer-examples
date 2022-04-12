@@ -25,7 +25,7 @@ const puppeteer = require('puppeteer');
     //     timeout: 0
     // });
 
-    await page.waitForSelector('.domReasdy', {
+    await page.waitForSelector('.domReady', {
         visible: true,
     });
 
