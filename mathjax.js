@@ -35,7 +35,7 @@ const puppeteer = require('puppeteer');
     //     waitUntil: 'networkidle0',
     //   });
 
-    await page.pdf({ path: `mathjax${new Date()}.pdf`, format: 'a4' });
+    await page.pdf({ path: `mathjax ${new Date()}.pdf`, format: 'a4' });
 
     // await page.pdf({
     //     path: outputFileName,
