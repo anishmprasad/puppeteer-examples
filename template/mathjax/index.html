@@ -195,16 +195,54 @@
           return (
               <div className={`wrapper ${question.length !== 0 ? 'domReady' : 'domNotReady'}`}>
                 <div class="header" />
-                <div class="homework-title margin-bottom-21">Name: 12th CBSE-A-Mathematics</div>
-                <div class="instruction">
-                    <div class="instruction-header">Instructions</div>
-                    <div class="instruction-content"><p>There are 3 Videos and 7 Questions in this Homework </p></div>
+                <div class="padding-24">
+                    <div class="homework-title margin-bottom-21">Name: 12th CBSE-A-Mathematics</div>
+                    <div class="instruction">
+                        <div class="instruction-header">Instructions</div>
+                        <div class="instruction-content"><p>There are 3 Videos and 7 Questions in this Homework </p></div>
+                    </div>
+                    <div class="sc-pByHo gmSliK margin-bottom-30">
+                        <div class="margin-top-17">
+                            <div class="due-date-title">Due Date</div>
+                            <div class="margin-top-10 flex">
+                                <div class="sc-qQKPx sc-qYHHM ktVefL border-radius-2 padding-4 margin-right-20" color="#FE6F9B">
+                                    <div class="type font-size-16">
+                                        11th April 2022
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="margin-top-17">
+                            <div class="due-date-title">
+                                No. of Videos
+                            </div>
+                            <div class="margin-top-10 flex">
+                                <div class="sc-qQKPx sc-qYHHM cdOCRM border-radius-2 padding-4 margin-right-20" color="#4A3EF5">
+                                    <div class="type font-size-16">
+                                        3 videos
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="margin-top-17">
+                            <div class="due-date-title">
+                                No. of Questions
+                            </div>
+                            <div class="margin-top-10 flex">
+                                <div class="sc-qQKPx sc-qYHHM hFbiEz border-radius-2 padding-4 margin-right-20" color="#FF6D6D">
+                                    <div class="type font-size-16">
+                                        7 questions
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {question.map(question => {
+                        return(
+                            <div dangerouslySetInnerHTML={{__html: question.question_body}} />
+                        )
+                    })}
                 </div>
-                {question.map(question => {
-                    return(
-                        <div dangerouslySetInnerHTML={{__html: question.question_body}} />
-                    )
-                })}
               </div>
             )
         };
