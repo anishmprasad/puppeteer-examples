@@ -2,12 +2,12 @@ const puppeteer = require('puppeteer');
 
 (async () => {
     // const url = 'https://www.sqlpac.com/en/documents/html-equations-math-with-mathjax-asciimath.html'
-    const url = '/template/mathjax.html'
+    const url = '/template/mathjax/index.html'
     
     // const url = 'https://news.google.com'
     const browser = await puppeteer.launch({
         // headless : true,
-        devtools: true
+        // devtools: true
     });
     const page = await browser.newPage();
     await page.goto(`file://${__dirname}${url}`,
@@ -29,13 +29,13 @@ const puppeteer = require('puppeteer');
         visible: true,
     });
 
-    await page.waitFor(5000);
+    // await page.waitFor(5000);
 
     // await page.waitForNavigation({
     //     waitUntil: 'networkidle0',
     //   });
 
-    // await page.pdf({ path: `mathjax${new Date()}.pdf`, format: 'a4' });
+    await page.pdf({ path: `mathjax${new Date()}.pdf`, format: 'a4' });
 
     // await page.pdf({
     //     path: outputFileName,

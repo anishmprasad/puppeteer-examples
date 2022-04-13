@@ -69,7 +69,60 @@
       
   </script> -->
 
+  <style>
+    html {
+        font-size: 62.5%;
+    }
+    .homework-title {
+        font-size: 1.5rem;
+        color: rgb(0, 0, 249);
+        font-weight: 600;
+    }
+    .margin-bottom-21 {
+        margin-bottom: 1.3125rem;
+    }
+    .instruction-header {
+        padding: 1rem;
+        font: 600 0.875rem / 1.125rem Gilroy;
+        background-color: rgb(0, 0, 249);
+        color: rgb(255, 255, 255);
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
+    .instruction-content {
+        padding: 1.37rem 0.875rem 2rem;
+        font: 600 0.875rem / 1.125rem Gilroy;
+        color: rgb(52, 53, 104);
+        opacity: 0.6;
+    }
+    .e-q-w {
+        background: 0% 0% no-repeat padding-box padding-box rgb(247, 248, 250);
+        border: 1px solid rgb(230, 235, 245);
+        border-radius: 0.5rem;
+        width: 100%;
+    }
+
+    .padding-16 {
+        padding: 1rem;
+    }
+    .margin-bottom-7 {
+        margin-bottom: 0.4375rem;
+    }
+    .margin-top-7 {
+        margin-top: 0.4375rem;
+    }
+    .wrapper{
+        border: 2px solid #acb9d5;
+    }
+    .header{
+        height: 2.5rem;
+        width: 100%;
+        background: url('./images/homework_preview_banner.png') 0% 0% / 100% 100% rgb(0, 0, 249);
+    }
+  </style>
+
   <script type="text/babel">
+
       class Hello extends React.Component{
         state = {
             question : []
@@ -138,7 +191,13 @@
         render() {
           const {question} = this.state
           return (
-              <div className={`${question.length !== 0 ? 'domReady' : 'domNotReady'}`}>
+              <div className={`wrapper ${question.length !== 0 ? 'domReady' : 'domNotReady'}`}>
+                <div class="header" />
+                <div class="homework-title margin-bottom-21">Name: 12th CBSE-A-Mathematics</div>
+                <div class="instruction">
+                    <div class="instruction-header">Instructions</div>
+                    <div class="instruction-content"><p>There are 3 Videos and 7 Questions in this Homework </p></div>
+                </div>
                 {question.map(question => {
                     return(
                         <div dangerouslySetInnerHTML={{__html: question.question_body}} />
