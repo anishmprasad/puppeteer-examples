@@ -19,6 +19,9 @@ router.get('/', async (req, res) => {
       </html>
     `);
     res.set("Content-Type", "application/pdf");
+    // res.set("Content-Type", "application/octet-stream");
+    // res.set("Content-Disposition", `attachment;`);
+
     res.send(pdf);
 });
 
