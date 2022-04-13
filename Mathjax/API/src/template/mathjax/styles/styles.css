@@ -1,0 +1,180 @@
+html {
+    font-size: 62.5%;
+    -webkit-print-color-adjust: exact;
+}
+.homework-title {
+    font-size: 1.5rem;
+    color: rgb(0, 0, 249);
+    font-weight: 600;
+}
+.margin-bottom-21 {
+    margin-bottom: 1.3125rem;
+}
+.instruction-header {
+    padding: 1rem;
+    font: 600 0.875rem / 1.125rem Gilroy;
+    background-color: rgb(0, 0, 249);
+    color: rgb(255, 255, 255);
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+.instruction-content {
+    padding: 1.37rem 0.875rem 2rem;
+    font: 600 0.875rem / 1.125rem Gilroy;
+    color: rgb(52, 53, 104);
+    opacity: 0.6;
+}
+.e-q-w {
+    background: 0% 0% no-repeat padding-box padding-box rgb(247, 248, 250);
+    border: 1px solid rgb(230, 235, 245);
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.padding-16 {
+    padding: 1rem;
+}
+.margin-bottom-7 {
+    margin-bottom: 0.4375rem;
+}
+.margin-top-7 {
+    margin-top: 0.4375rem;
+}
+.wrapper{
+    border: 2px solid #acb9d5;
+}
+.header{
+    height: 2.5rem;
+    width: 100%;
+    background: url('../images/homework_preview_banner.png') 0% 0% / 100% 100% rgb(0, 0, 249);
+}
+.gmSliK {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.margin-bottom-30 {
+    margin-bottom: 1.875rem;
+}
+.margin-top-17 {
+    margin-top: 1.0625rem;
+}
+.gmSliK .due-date-title {
+    font: 600 0.75rem / 0.875rem Gilroy;
+    letter-spacing: 0.1px;
+    color: rgb(36, 37, 69);
+    opacity: 0.6;
+}
+.margin-top-10 {
+    margin-top: 0.625rem;
+}
+.ktVefL {
+    height: 3.5rem;
+    background: 0% 0% no-repeat padding-box padding-box rgb(253, 230, 237);
+    border: 0.125rem solid rgb(254, 111, 155);
+    border-radius: 0.25rem;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+    font: 700 1rem / 1.187rem Gilroy;
+    letter-spacing: 0.38px;
+    width: 12rem;
+}
+.ktVefL .type {
+    text-align: center;
+    font: 700 0.875rem / 1.0625rem Gilroy;
+    color: rgb(254, 111, 155);
+    text-transform: capitalize;
+    letter-spacing: 0.34px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.margin-top-17 {
+    margin-top: 1.0625rem;
+}
+.gmSliK .due-date-title {
+    font: 600 0.75rem / 0.875rem Gilroy;
+    letter-spacing: 0.1px;
+    color: rgb(36, 37, 69);
+    opacity: 0.6;
+}
+.margin-top-10 {
+    margin-top: 0.625rem;
+}
+.cdOCRM {
+    height: 3.5rem;
+    background: 0% 0% no-repeat padding-box padding-box rgb(231, 230, 253);
+    border: 0.125rem solid rgb(74, 62, 245);
+    border-radius: 0.25rem;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+    font: 700 1rem / 1.187rem Gilroy;
+    letter-spacing: 0.38px;
+    width: 12rem;
+}
+
+.margin-right-20 {
+    margin-right: 1.25rem;
+}
+.padding-4 {
+    padding: 0.25rem;
+}
+.border-radius-2 {
+    border-radius: 0.125rem;
+}
+.cdOCRM .type {
+    text-align: center;
+    font: 700 0.875rem / 1.0625rem Gilroy;
+    color: rgb(74, 62, 245);
+    text-transform: capitalize;
+    letter-spacing: 0.34px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.font-size-16 {
+    font-size: 1rem;
+}
+.gmSliK .due-date-title {
+    font: 600 0.75rem / 0.875rem Gilroy;
+    letter-spacing: 0.1px;
+    color: rgb(36, 37, 69);
+    opacity: 0.6;
+}
+.hFbiEz {
+    height: 3.5rem;
+    background: 0% 0% no-repeat padding-box padding-box rgb(255, 227, 227);
+    border: 0.125rem solid rgb(255, 109, 109);
+    border-radius: 0.25rem;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+    font: 700 1rem / 1.187rem Gilroy;
+    letter-spacing: 0.38px;
+    width: 12rem;
+}
+.hFbiEz .type {
+    text-align: center;
+    font: 700 0.875rem / 1.0625rem Gilroy;
+    color: rgb(255, 109, 109);
+    text-transform: capitalize;
+    letter-spacing: 0.34px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.padding-24 {
+    padding: 1.5rem;
+}
