@@ -6,12 +6,13 @@ const puppeteer = require('puppeteer');
 
 const generatePDF = async () => {
   // const url = 'https://www.sqlpac.com/en/documents/html-equations-math-with-mathjax-asciimath.html'
-  const url = '../../template/mathjax/index.html';
+//   const url = '../../template/mathjax/index.html';
+  const url = '../../template/assignpreview/build/index.html';
     
   // const url = 'https://news.google.com'
   const browser = await puppeteer.launch({
       // headless : true,
-      // devtools: true
+    //   devtools: true
   });
   const page = await browser.newPage();
   await page.goto(`file://${__dirname}${url}`,

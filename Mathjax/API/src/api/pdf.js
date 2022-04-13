@@ -8,16 +8,7 @@ const generatePDF = require('./generatePDF')
 const router = express.Router();
 
 router.get('/', async (req, res) => {
-    const pdf = await generatePDF(`
-      <html>
-        <head>
-          <title>Test PDF</title>
-        </head>
-        <body>
-           // The contents of our PDF will go here...
-        </body>
-      </html>
-    `);
+    const pdf = await generatePDF();
     res.set("Content-Type", "application/pdf");
     // res.set("Content-Type", "application/octet-stream");
     // res.set("Content-Disposition", `attachment;`);
