@@ -12,7 +12,7 @@ const generatePDF = async () => {
   // const url = 'https://news.google.com'
   const browser = await puppeteer.launch({
       // headless : true,
-    //   devtools: true
+      // devtools: true
   });
   const page = await browser.newPage();
   await page.goto(`file://${__dirname}${url}`,
@@ -40,7 +40,11 @@ const generatePDF = async () => {
   //     waitUntil: 'networkidle0',
   //   });
 
-  const pdfBuffer = await page.pdf({ path: `mathjax ${new Date()}.pdf`, format: 'a4' });
+  const pdfBuffer = await page.pdf({
+    path: `mathjax ${new Date()}.pdf`, 
+    format: 'a4',
+    timeout : 0 
+  });
 
   // await page.pdf({
   //     path: outputFileName,
