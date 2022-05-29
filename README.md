@@ -1,5 +1,5 @@
 # puppeteer-examples
-A Node PDF Service
+A Node JS PDF Service
 
 # Licence
 MIT
