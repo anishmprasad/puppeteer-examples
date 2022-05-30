@@ -1,4 +1,4 @@
-# puppeteer-examples
+# puppeteer-pdf
 A Node JS PDF Service
 
 # Licence
